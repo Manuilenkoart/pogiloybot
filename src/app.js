@@ -6,7 +6,7 @@ const {
 } = require("../src/voiceReply");
 const { TOKEN } = require("../config");
 const PORT = process.env.PORT || 3000;
-const URL = process.env.URL || "https://pogiloytgbot.herokuapp.com/";
+const URL = process.env.URL || "https://pogiloybot.herokuapp.com/";
 const bot = new Telegraf(TOKEN);
 
 bot.telegram.setWebhook(`${URL}/bot${TOKEN}`);
