@@ -11,7 +11,7 @@ const URL = process.env.URL || "https://pogiloybot.herokuapp.com/";
 const bot = new Telegraf(TOKEN);
 
 bot.telegram.setWebhook(`${URL}/bot${TOKEN}`);
-bot.setWebhook(`/bot${TOKEN}`, null, PORT);
+bot.startWebhook(`/bot${TOKEN}`, null, PORT);
 
 bot.catch((err, ctx) => {
   console.log(`Ooops, encountered an error for ${ctx.updateType}`, err);
