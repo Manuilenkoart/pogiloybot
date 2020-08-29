@@ -4,7 +4,8 @@ const {
   voiceReplyImg,
   getRandomInt,
 } = require("../src/voiceReply");
-const { TOKEN } = require("../config");
+// const { TOKEN } = require("../config");
+const TOKEN = process.env.TOKEN;
 const PORT = process.env.PORT || 3000;
 const URL = process.env.URL || "https://pogiloybot.herokuapp.com/";
 const bot = new Telegraf(TOKEN);
